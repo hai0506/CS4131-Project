@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_weather">
+    <fragment
+        android:id="@+id/nav_weather"
+        android:name="com.example.grades.Fragments.WeatherFragment"
+        android:label="Locations"
+        tools:layout="@layout/weather_fragment" />
+    <fragment
+        android:id="@+id/nav_forecast"
+        android:name="com.example.grades.Fragments.ForecastFragment"
+        android:label="Forecast"
+        tools:layout="@layout/forecast_fragment" />
+    <fragment
+        android:id="@+id/nav_track"
+        android:name="com.example.grades.Fragments.TrackFragment"
+        android:label="Tracking"
+        tools:layout="@layout/fragment_track" />
+
+</navigation>
